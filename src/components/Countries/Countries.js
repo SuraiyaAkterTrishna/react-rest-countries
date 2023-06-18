@@ -14,9 +14,8 @@ const Countries = () => {
       <p>All Countries: {countries.length}</p>
       {countries.map((country) => (
         <Country
-          name={country.name.common}
-          population={country.population}
-          area={country.area}
+            key={country.cca3}
+          country={country}
         ></Country>
       ))}
     </div>
