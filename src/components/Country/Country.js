@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 const Country = (props) => {
-  return (
-    <div>
-      <h4>Name: {props.name}</h4>
-      <p>Population: {props.population}</p>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Name: {props.name}</h1>
+            <h4>Population: {props.population}</h4>
+        </div>
+    );
 };
 
 export default Country;
