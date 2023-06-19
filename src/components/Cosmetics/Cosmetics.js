@@ -1,13 +1,19 @@
 import React from 'react';
-import {add, multiply} from '../../utilities/calculate';
-import Shoes from '../Shoes/Shoes';
+import Cosmetic from '../Cosmetic/Cosmetic';
 
 const Cosmetics = () => {
+    const cosmetics = [
+        {id: 1, name: 'Alta', price: 100},
+        {id: 2, name: 'Churi', price: 200},
+        {id: 3, name: 'Nailpolis', price: 300},
+        {id: 4, name: 'Lipstick', price: 400},
+        {id: 5, name: 'Ring', price: 500},
+    ];
     return (
         <div>
-            <h1>all the products is : {add(10, 20)}</h1>
-            <p>Price: {multiply(10, 30)}</p>
-            <Shoes></Shoes>
+            {
+                cosmetics.map(cosmetic => <Cosmetic cosmetic = {cosmetic}></Cosmetic>)
+            }
         </div>
     );
 };
